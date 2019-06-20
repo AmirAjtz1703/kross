@@ -1,2 +1,2 @@
-# Amir-Ajtz-1703.github.io
+# AmirAjtz-1703.github.io
 portfolio projext
