@@ -1,0 +1,65 @@
+.blog-header {
+  height: 50vh;
+  width: 100%;
+  background: url("../img/bg/bg-blogs.png") no-repeat center center;
+  @import "template/header-menu";
+
+  .blog-title {
+    color: $white;
+    height: 50vh;
+    @include jcc;
+    align-items: center;
+  }
+}
+
+.blogs {
+  height: 150vh;
+  width: 100%;
+  margin: 0 auto;
+  @include jcc;
+
+  &-container {
+    @include fw;
+    @include jcsa;
+  }
+
+  &-item {
+    margin-top: 1em;
+    display: flex;
+    width: 300px;
+    border-radius: 6px;
+
+    .col3 {
+      height: 502px;
+
+      &text {
+        margin-left: 30px;
+        .title {
+          @extend %p-title;
+          line-height: 36px;
+          margin-bottom: 11px;
+        }
+
+        .text {
+          width: 266px;
+          opacity: 0.7;
+          @include r400;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 8px;
+        }
+
+        a {
+          color: $violet;
+          @include pd400;
+          font-size: 15px;
+          padding: 6px 3px;
+          background: #fafafa;
+        }
+      }
+    }
+  }
+}
+
+@import "template/clients";
+@import "template/contacts";

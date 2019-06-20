@@ -1,0 +1,40 @@
+.servises {
+  height: 70vh;
+  width: 100%;
+  margin-top: 5%;
+
+  &-title {
+    @extend %h2;
+    text-align: center;
+  }
+
+  &-container {
+    @include jcsa;
+  }
+
+  &-item {
+    @extend %card;
+
+    &__title {
+      margin-top: 48px;
+      @extend %p-title;
+    }
+
+    &_text {
+      opacity: 0.7;
+      @extend %card-text;
+    }
+
+    &-violet {
+      @extend %card;
+      background: $violet;
+      color: $white;
+
+      .servises-item__title {
+        margin-top: 48px;
+        @extend %p-title;
+        color: $white;
+      }
+    }
+  }
+}

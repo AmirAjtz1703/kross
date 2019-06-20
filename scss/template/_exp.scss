@@ -1,0 +1,52 @@
+.exp {
+  height: 50vh;
+  width: 100%;
+
+  &__title {
+    text-align: center;
+    @extend %h2;
+    margin-bottom: 60px;
+  }
+
+  &-anim {
+    @include jcsa;
+
+    &__item {
+      display: block;
+      text-align: center;
+    }
+
+    &__img {
+      position: relative;
+      animation: spin 1s linear infinite;
+    }
+
+    &__suptitle {
+      @include r400;
+      font-size: 18px;
+    }
+
+    &__title {
+      margin-top: 7px;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      @extend %p-title;
+    }
+
+    &__text {
+      opacity: 0.4;
+      @include pd400;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,53 @@
+header {
+  height: 100vh;
+  width: 100%;
+  background: url("../img/bg/bg-hero.png") no-repeat center center;
+  background-attachment: scroll;
+  background-size: cover;
+  @import "template/header-menu";
+
+  .header-title {
+    height: 75vh;
+    @include aic;
+    margin-left: 25%;
+
+    h1 {
+      @extend %h1;
+    }
+  }
+
+  .header-icons {
+    height: 15vh;
+    margin-left: 7%;
+    margin-top: -67px;
+
+    &__item {
+      i {
+        font-size: 16px;
+        color: $white;
+        margin: 12px;
+      }
+    }
+  }
+}
+
+.header-text {
+  height: 50vh;
+  width: 100%;
+  @include fdc;
+  text-align: center;
+
+  p {
+    margin: 0 auto;
+    max-width: 972px;
+    @extend %p;
+    line-height: 36px;
+  }
+
+  a {
+    color: $violet;
+    @include pd700;
+    font-size: 18px;
+    margin-top: 24px;
+  }
+}

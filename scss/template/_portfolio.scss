@@ -1,0 +1,27 @@
+.portfolio {
+  margin-top: 5%;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 2%;
+
+  &-title {
+    margin-bottom: 2%;
+    @extend %h2;
+    text-align: center;
+  }
+
+  .galery {
+    @include fw;
+
+    &-item {
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+    &-square {
+      max-width: 774px;
+      @include fw;
+      align-items: center;
+    }
+  }
+}

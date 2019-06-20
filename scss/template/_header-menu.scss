@@ -1,0 +1,27 @@
+.header-menu {
+  max-width: 1370px;
+  height: 10vh;
+  @include aic;
+  @include jcsb;
+  margin: 0 8%;
+
+  nav {
+    .home {
+      @include pd700;
+      font-size: 18px;
+    }
+
+    a {
+      @include pd400;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-right: 17px;
+      padding-bottom: 4px;
+      transition: 0.3s all;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

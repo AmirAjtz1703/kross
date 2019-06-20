@@ -1,0 +1,78 @@
+%p {
+  color: $black;
+  @include pd400;
+  font-size: 18px;
+}
+
+%h1 {
+  color: $white;
+  @include pp700;
+  font-size: 60px;
+  line-height: 75px;
+}
+
+%h2 {
+  color: $black;
+  @include pp700;
+  font-size: 60px;
+}
+
+%h3 {
+  @include pp700;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+%img-skil {
+  width: 269px;
+  height: 154px;
+  background-color: #f9f7fe;
+}
+
+%p-title {
+  @include pd700;
+  color: $black;
+  font-size: 22px;
+}
+
+%card-text {
+  max-width: 269px;
+  margin: 18px auto;
+  @include r400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+%card {
+  margin-top: 5%;
+  width: 372px;
+  height: 411px;
+  box-shadow: 0 59px 39px 7px rgba(224, 241, 255, 0.34);
+  border-radius: 3px;
+  text-align: center;
+  @include fdc;
+}
+
+%about-title {
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 15%;
+  color: $white;
+  @include pp700;
+  font-size: 60px;
+  padding-bottom: 2%;
+}
+
+%blog-date {
+  color: #737373;
+  font-size: 20px;
+  line-height: 36px;
+  @include pd400;
+}
+
+%blog-text {
+  font-size: 15px;
+  @include r300;
+  line-height: 17px;
+}

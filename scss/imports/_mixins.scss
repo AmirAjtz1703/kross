@@ -1,0 +1,60 @@
+@mixin jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin jcsa {
+  display: flex;
+  justify-content: space-around;
+}
+@mixin fw {
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin fdc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin jcc {
+  display: flex;
+  justify-content: center;
+}
+@mixin aic {
+  display: flex;
+  align-items: center;
+}
+@mixin pd400 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin pd700 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin r300 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
+@mixin r400 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin pp700 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+.align-center {
+  text-align: center;
+}

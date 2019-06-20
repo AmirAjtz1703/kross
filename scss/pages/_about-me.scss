@@ -1,0 +1,120 @@
+.about-template {
+  height: 50vh;
+  width: 100%;
+  background: url("../img/bg/about-bg.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  @import "template/header-menu";
+
+  .about-title {
+    @extend %about-title;
+  }
+}
+
+.about-text {
+  height: 60vh;
+  width: 100%;
+  @include jcsa;
+
+  &__main {
+    height: 50vh;
+    @include fdc;
+
+    p {
+      width: 680px;
+      @extend %p;
+
+      &:nth-child(1) {
+        margin-bottom: 11px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 33px;
+      }
+    }
+  }
+
+  &-img {
+    margin-top: -14%;
+    margin-left: 29px;
+    height: 100%;
+    @include fdc;
+
+    .men {
+      border-radius: 25px;
+      box-shadow: 0 29px 19px 7px rgba(224, 241, 255, 0.34);
+      border: 11px solid #ffffff;
+    }
+
+    .signature {
+      margin-top: 23px;
+      width: 172px;
+      height: 88px;
+      margin-left: 35%;
+    }
+
+    .title {
+      margin-top: 22px;
+      text-align: center;
+      @extend %p;
+      font-size: 22px;
+    }
+  }
+}
+
+.process {
+  height: 70vh;
+  width: 100%;
+
+  &-title {
+    text-align: center;
+    @extend %h2;
+  }
+
+  &-container {
+    height: 50vh;
+    @include jcsa;
+    align-items: center;
+  }
+
+  &-item {
+    text-align: center;
+    margin: 0 auto;
+    width: 279px;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      @extend %p-title;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.team {
+  height: 70vh;
+  width: 100%;
+
+  &-title {
+    text-align: center;
+    @extend %h2;
+  }
+
+  &-container {
+    height: 70vh;
+    @include jcsa;
+    align-items: center;
+  }
+
+  &-text {
+    margin-top: 20px;
+    text-align: center;
+    @include pd400;
+    @extend %p-title;
+  }
+}
+
+@import "template/clients";
+@import "template/contacts";

@@ -1,0 +1,261 @@
+.blog-header {
+  height: 50vh;
+  width: 100%;
+  background: url("../img/bg/bg-blogs.png") no-repeat center center;
+  @import "template/header-menu";
+
+  .blog-title {
+    color: $white;
+    height: 50vh;
+    @include jcc;
+    align-items: center;
+  }
+}
+
+.blog-forum {
+  height: 185vh;
+  width: 100%;
+
+  &__title {
+    width: 771px;
+    margin-top: 10%;
+    @extend %h3;
+    margin-bottom: 26px;
+  }
+
+  &__date {
+    @extend %blog-date;
+    margin-bottom: 7px;
+  }
+
+  &__text-strong {
+    width: 973px;
+    margin-top: 28px;
+    @extend %p;
+    line-height: 27px;
+    margin-bottom: 26px;
+  }
+
+  &__text-p {
+    width: 970px;
+    @extend %blog-text;
+
+    p {
+      &:nth-child(1) {
+        margin-bottom: 13px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 16px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.comments {
+  height: 80vh;
+  width: 100%;
+  background: #fafafa;
+
+  &-title {
+    @extend %p-title;
+    margin-bottom: 66px;
+  }
+
+  &-item {
+    margin-left: 7%;
+    display: flex;
+
+    &:nth-child(3) {
+      margin-top: 17px;
+      margin-left: 15%;
+      margin-bottom: 42px;
+    }
+  }
+
+  &-text {
+    margin-left: 30px;
+  }
+
+  &-autor {
+    @extend %p-title;
+  }
+
+  &-p {
+    @extend %blog-text;
+    width: 598px;
+    opacity: 0.8;
+    line-height: 25px;
+    margin-top: 14px;
+  }
+
+  &-reply {
+    margin-bottom: 34px;
+    @extend %p-title;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+.leave-com {
+  height: 70vh;
+  width: 100%;
+  margin-left: 11.5%;
+
+  &__title {
+    @extend %p-title;
+    margin-bottom: 106px;
+    margin-left: 10%;
+    margin-top: 50px;
+  }
+
+  &-main {
+    margin-top: 50px;
+    width: 900px;
+    height: 394px;
+
+    &.row {
+      @include clearfix;
+      margin: 22px 0;
+    }
+
+    .x-15 {
+      width: 50%;
+    }
+  }
+
+  .form-field {
+    position: relative;
+    margin: 28px 0;
+  }
+
+  .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 1px 0;
+    border-color: #c7c7c7;
+    @include r400;
+    font-size: 16px;
+    line-height: 26px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.not-empty,
+    &:focus {
+      + .label {
+        transform: translateY(-24px);
+      }
+    }
+  }
+
+  .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    @include r400;
+    font-size: 15px;
+    line-height: 26px;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .message {
+    width: 476px;
+    height: 224px;
+    border-radius: 6px;
+    background-color: #fafafa;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    @include pd400;
+    font-size: 22px;
+    line-height: 24px;
+    width: 476px;
+    height: 59px;
+    border-radius: 6px;
+    background-color: #41228e;
+    color: $white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.left {
+  position: absolute;
+  right: 10%;
+  top: 350%;
+}
+
+.blogs-items {
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  @include jcc;
+
+  &-title {
+    @extend %h2;
+    color: $black;
+    height: 10vh;
+    text-align: center;
+    @include jcc;
+    align-items: center;
+  }
+
+  &-container {
+    @include fw;
+    justify-content: space-around;
+  }
+
+  &-items {
+    margin-top: 1em;
+    display: flex;
+    width: 300px;
+    margin-left: 90px;
+    border-radius: 6px;
+
+    &:first-child {
+      margin-left: -11.5%;
+    }
+
+    .col3 {
+      height: 502px;
+
+      &text {
+        margin-left: 30px;
+        .title {
+          @extend %p-title;
+          line-height: 36px;
+          margin-bottom: 11px;
+        }
+
+        .text {
+          width: 266px;
+          opacity: 0.7;
+          @include r400;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 8px;
+        }
+
+        a {
+          color: $violet;
+          @include pd400;
+          font-size: 15px;
+          padding: 6px 3px;
+          background: #fafafa;
+        }
+      }
+    }
+  }
+}
+
+@import "template/contacts";

@@ -1,0 +1,90 @@
+.blog {
+  height: 85vh;
+  width: 100%;
+
+  &-title {
+    text-align: center;
+    @extend %h2;
+  }
+
+  &-container {
+    margin-top: 3%;
+    @include jcsa;
+  }
+
+  &-item {
+    display: flex;
+    width: 266px;
+    box-shadow: 0 59px 39px 7px rgba(224, 241, 255, 0.34);
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    .img img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    .col1 {
+      margin-left: 25px;
+      height: 502px;
+      @include aic;
+
+      &-text {
+        .title {
+          @extend %p-title;
+          line-height: 36px;
+          margin-bottom: 22px;
+        }
+
+        .text {
+          width: 266px;
+          opacity: 0.7;
+          @include r400;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 52px;
+        }
+
+        a {
+          color: $violet;
+          @include pd400;
+          font-size: 15px;
+          padding: 6px 3px;
+          background: #e8e4f1;
+        }
+      }
+    }
+
+    .col3 {
+      margin-left: 15px;
+      height: 502px;
+
+      &text {
+        .title {
+          @extend %p-title;
+          line-height: 36px;
+          margin-bottom: 11px;
+        }
+
+        .text {
+          width: 266px;
+          opacity: 0.7;
+          @include r400;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 8px;
+        }
+
+        a {
+          color: $violet;
+          @include pd400;
+          font-size: 15px;
+          padding: 6px 3px;
+          background: #ffeeea;
+        }
+      }
+    }
+  }
+}

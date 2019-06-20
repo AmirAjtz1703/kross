@@ -1,0 +1,45 @@
+.skill {
+  height: 50vh;
+  width: 100%;
+
+  &-title {
+    @extend %h2;
+    text-align: center;
+  }
+
+  .skils {
+    margin-top: 5%;
+    @include jcsa;
+
+    &-item {
+      &__img-1 {
+        @extend %img-skil;
+        background: url("../img/skils/skil-1.png") no-repeat center center;
+        background-size: cover;
+      }
+
+      &__img-2 {
+        @extend %img-skil;
+        background: url("../img/skils/skil-2.png") no-repeat center center;
+        background-size: cover;
+      }
+
+      &__img-3 {
+        @extend %img-skil;
+        background: url("../img/skils/skil-3.png") no-repeat center center;
+        background-size: cover;
+      }
+
+      &__img-4 {
+        @extend %img-skil;
+        background: url("../img/skils/skil-4.png") no-repeat center center;
+        background-size: cover;
+      }
+
+      &__title {
+        margin-top: 22px;
+        @extend %p-title;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.contacts {
+  height: 68vh;
+  width: 100%;
+  background: url("../img/bg/bg-dots.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  z-index: 6;
+  color: $black !important;
+
+  &-title {
+    margin-top: 2%;
+    text-align: center;
+    @extend %h2;
+    color: $black !important;
+    z-index: 2;
+    margin-bottom: 33px;
+  }
+
+  &-main {
+    color: $black;
+    z-index: 9;
+    margin: -10px auto;
+    width: 765px;
+    height: 501px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    position: relative;
+    @include aic;
+  }
+
+  .row {
+    color: $black;
+    @include clearfix;
+    margin: -5px 0;
+
+    .col {
+      padding: 0 15px;
+      float: left !important;
+
+      &.x-50 {
+        width: 50%;
+      }
+
+      &.x-100 {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact-form {
+    &__title {
+      @extend %p-title;
+      text-align: center;
+      margin-bottom: 83px;
+    }
+
+    .form-field {
+      position: relative;
+      margin: 22px 0;
+    }
+
+    .input-text {
+      display: block;
+      width: 100%;
+      height: 36px;
+      border-width: 0 0 1px 0;
+      border-color: #c7c7c7;
+      @include r400;
+      font-size: 16px;
+      line-height: 26px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.not-empty,
+      &:focus {
+        + .label {
+          transform: translateY(-24px);
+        }
+      }
+    }
+
+    .label {
+      position: absolute;
+      left: 20px;
+      bottom: 11px;
+      @include r400;
+      font-size: 15px;
+      line-height: 26px;
+      cursor: text;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .submit-btn {
+      display: inline-block;
+      text-transform: uppercase;
+      @include pd400;
+      font-size: 22px;
+      line-height: 24px;
+      width: 356px;
+      height: 59px;
+      border-radius: 6px;
+      background-color: #41228e;
+      color: $white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+  background: $dark;
+  color: $white;
+
+  .container {
+    @include jcsa;
+    @include pd400;
+    font-size: 18px;
+    line-height: 33px;
+    padding-top: 73px;
+
+    span {
+      color: #c7c7c7;
+      font-size: 18px;
+    }
+
+    .footer-address {
+      width: 271px;
+    }
+
+    .line {
+      display: block;
+      margin: 0 auto 48px;
+    }
+  }
+
+  .footer-text {
+    margin-top: 10px;
+    text-align: center;
+    background: $dark;
+
+    p {
+      color: #c7c7c7;
+      @include r400;
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+}

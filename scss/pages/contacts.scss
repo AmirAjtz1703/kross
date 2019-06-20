@@ -1,0 +1,19 @@
+.contacts-header {
+  height: 50vh;
+  width: 100%;
+  background: url("../img/bg/bg-contacts.png") no-repeat center center;
+  background-attachment: scroll;
+  background-size: cover;
+  @import "template/header-menu";
+  color: $white !important;
+
+  &-title {
+    @extend %h2;
+    color: $white !important;
+    height: 60vh;
+    @include jcc;
+    align-items: center;
+  }
+}
+@import "template/clients";
+@import "template/contacts";
