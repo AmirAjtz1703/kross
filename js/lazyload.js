@@ -37,11 +37,7 @@
 
 
 
-document.body.onload = function () {
-  setTimeout(function () {
-    var preloader = document.getElementsByClassName('loader');
-    if(!preloader.classList.contains('done')) {
-      preloader.classList.add('done')
-    }
-  }, 1000);
-}
+$(window).on("load", function() {
+  $(".load-icon").fadeOut();
+  $(".pre-loader").delay(1000).fadeOut("slow");
+});
