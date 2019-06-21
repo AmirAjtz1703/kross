@@ -1,2 +1,2 @@
-# AmirAjtz-1703.github.io
-portfolio project
+# Kross Project
+its a portfolio project
